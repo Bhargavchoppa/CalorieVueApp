@@ -1,0 +1,34 @@
+node_modules/
+.expo/
+dist/
+web-build/
+ios/
+
+# Android generated build files
+android/.gradle/
+android/build/
+android/app/build/
+android/.cxx/
+android/local.properties
+android/captures/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.pem
+*.p12
+
+# Large AI model files
+*.gguf
+*.bin
+
+# Other generated files
+*.hprof
+.DS_Store
+npm-debug.log*
+expo-env.d.ts
+
+.idea/

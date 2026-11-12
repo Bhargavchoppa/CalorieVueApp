@@ -1,0 +1,4 @@
+import { Tabs } from 'expo-router';
+import { Text } from 'react-native';
+const icon=(s:string)=><Text style={{fontSize:17}}>{s}</Text>;
+export default function TabLayout(){return <Tabs screenOptions={{headerShown:false,tabBarStyle:{backgroundColor:'#0b100c',borderTopColor:'#1d2a20',height:64,paddingTop:8,paddingBottom:8},tabBarActiveTintColor:'#2FEF10',tabBarInactiveTintColor:'#7b887e',tabBarLabelStyle:{fontSize:10,fontWeight:'700'}}}><Tabs.Screen name="index" options={{title:'TODAY',tabBarIcon:()=>icon('◉')}}/><Tabs.Screen name="history" options={{title:'HISTORY',tabBarIcon:()=>icon('▤')}}/><Tabs.Screen name="coach" options={{title:'COACH',tabBarIcon:()=>icon('✦')}}/><Tabs.Screen name="profile" options={{title:'PROFILE',tabBarIcon:()=>icon('◎')}}/><Tabs.Screen name="settings" options={{title:'SETTINGS',tabBarIcon:()=>icon('⚙')}}/></Tabs>}

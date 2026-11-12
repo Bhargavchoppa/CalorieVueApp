@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "CalorieVue",
+    "slug": "calorievue",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "calorievue",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "CalorieVue uses your photos to analyze and log meals on this device.",
+          "cameraPermission": "CalorieVue uses your camera to capture meals for on-device analysis."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "CalorieVue uses your camera to capture food and activity screenshots."
+        }
+      ],
+      [
+        "llama.rn",
+        {
+          "forceCxx20": true,
+          "enableOpenCL": false
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.calorievue.app",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES",
+        "INTERNET"
+      ]
+    },
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
